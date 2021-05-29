@@ -1,0 +1,176 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Candara Light";
+	user-select: none;
+
+}
+
+ul 
+{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	display: inline-block;
+	border:1px solid #ccc;
+	border-width:1px 0;
+	border-color: black;
+}
+
+li 
+{
+	display: inline-block;
+	font-weight: bold;
+}
+
+li a 
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+}
+
+li a:hover 
+{
+	background-color: rgba(0,0,0,0.25);
+}
+
+.nav 
+{	
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slidey
+{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.slidey-part
+{
+	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 1s;
+  	animation-name: fade;
+  	animation-duration: 1s;
+}
+
+@-webkit-keyframes fade 
+{
+  	from {opacity: 0} 
+  	to {opacity: 1}
+}
+
+@keyframes fade 
+{
+ 	from {opacity: 0} 
+  	to {opacity: 1}
+}
+
+img
+{
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.numero
+{
+	position: absolute;
+	font-size: 25px;
+	left: 3rem;
+  	top: 5rem;
+  	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+  	background-color: rgba(0,0,0,0.1);
+  	padding: 0.5rem;
+}
+
+.dot 
+{
+  	cursor: pointer;
+  	height: 0.2rem;
+ 	width: 3rem;
+  	margin: 0 2px;
+  	background-color: white;
+  	border-radius: 0;
+  	display: inline-block;
+  	transition: background-color 0.8s ease;
+}
+
+.active, .dot:hover 
+{
+  	background-color: #717171;
+}
+
+.lajne
+{
+	width: 14rem;
+	height: 0.5rem;
+	position: absolute;
+	left: calc(50vw - 7rem);
+	bottom: 2rem;
+}
+
+span
+{
+	box-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+}
+
+.previous, .next
+{
+	cursor: pointer;
+  	position: absolute;
+  	top: calc(50vh - 1.5rem);
+  	width: auto;
+  	padding: 1rem;
+  	color: white;
+  	font-size: 3rem;
+  	transition: 0.8s ease;
+  	text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+}
+
+.previous
+{
+	left: 1rem;
+}
+
+.next
+{
+ 	right: 1rem;
+}
+
+.previous:hover, .next:hover 
+{
+  	background-color: rgba(0,0,0,0.25);
+}
+
+.boa
+{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.toa
+{
+	position: absolute;
+	display: inline-block;
+	font-size: 35px;
+	left: 25vh;
+	top: 25vh;
+  	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+  	background-color: rgba(0,0,0,0.25);
+  	padding: 1rem;
+}
